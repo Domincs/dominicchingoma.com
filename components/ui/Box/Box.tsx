@@ -8,7 +8,7 @@ import {
 
 export interface Props extends HTMLAttributes<HTMLDivElement> {
   className?: string;
-  as?: 'div' | 'section' | 'article' | JSXElementConstructor<any>;
+  as?: 'div' | 'section' | 'article' |JSXElementConstructor<any>;
   style?: CSSProperties;
   html?: string;
   children?: ReactNode;

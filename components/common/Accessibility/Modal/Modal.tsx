@@ -84,13 +84,13 @@ export const Modal = ({ onClose, theme, toggleTheme }) => {
       <Box className={s.header}>
         <Link
           href='/accessibility'
-          className='hover:scale-110 hover:text-rose-500'
+          className='hover:scale-110 hover:text-[#FFBE7A]'
         >
           <BsQuestionCircle className={s.headerIcon} />
         </Link>
         <button
           onClick={onClose}
-          className='transition duration-300 ease-in-out hover:rotate-90 hover:text-rose-500'
+          className='transition duration-300 ease-in-out hover:rotate-90 hover:text-[#FFBE7A]'
         >
           <VscChromeClose className={s.headerIcon} />
           <span className='sr-only'>Close</span>

@@ -43,10 +43,11 @@ export const Button: FC<ButtonProps> = forwardRef((props, buttonRef) => {
       [s.primary]: variant === 'primary',
       [s.secondary]: variant === 'secondary',
       [s.naked]: variant === 'naked',
+      [s.disabled]: disabled,
       [s.sm]: size === 'sm',
       [s.md]: size === 'md',
       [s.lg]: size === 'lg',
-      [s.disabled]: disabled,
+      
     },
     className
   );

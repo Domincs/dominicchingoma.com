@@ -29,13 +29,13 @@ export const Page: FC<Props> = ({
         <title>{title}</title>
         <meta name='description' content={description} />
         <meta name='keywords' content={keywords} />
-        <meta name='author' content='Joseph Mukorivo' />
+        <meta name='author' content='Dominic Chingoma' />
         <meta name='image' content={image} />
         <meta name='og:title' content={title} />
         <meta name='og:description' content={description} />
         <meta name='og:image' content={image} />
         <meta name='og:url' content={url} />
-        <meta name='og:site_name' content='Joseph Mukorivo' />
+        <meta name='og:site_name' content='Dominic Chingoma' />
         <meta name='og:type' content={type} />
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:title' content={title} />
@@ -46,8 +46,8 @@ export const Page: FC<Props> = ({
           name='theme-color'
           content={theme === 'dark' ? '#0f172a' : '#ffffff'}
         />
-        <meta name='twitter:site' content='@josemukorivo' />
-        <meta name='twitter:creator' content='@josemukorivo' />
+        <meta name='twitter:site' content='@dominicsdc' />
+        <meta name='twitter:creator' content='@dominicsdc' />
         {canonicalURL && <link rel='canonical' href={canonicalURL} />}
       </Head>
       <main>{children}</main>

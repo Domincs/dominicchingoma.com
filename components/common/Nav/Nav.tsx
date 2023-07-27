@@ -5,6 +5,7 @@ import { MailMe, MenuButton } from '..';
 import { MdOutlineKeyboardArrowLeft } from 'react-icons/md';
 import { Logo } from '../Logo/Logo';
 import { AnimatePresence } from 'framer-motion';
+import { DarkModeToggle } from '@components/ui/DarkModeToggle/DarkModeToggle';
 
 interface Props {
   variant?: 'main' | 'blog';
@@ -24,7 +25,10 @@ export const Nav: FC<Props> = ({ className = '', variant = 'main' }) => {
           <Container className='flex items-center justify-between'>
             <MailMe className='hidden md:block' />
             <Logo className='md:hidden' />
-            <MenuButton onOpen={onOpen} />
+            <Box className="flex gap-5">
+              <DarkModeToggle />
+              <MenuButton onOpen={onOpen} />
+            </Box>
           </Container>
         </nav>
       )}
@@ -34,13 +38,14 @@ export const Nav: FC<Props> = ({ className = '', variant = 'main' }) => {
             <Logo className='md:hidden' />
             <Link
               href='/blog'
-              className='font-heading relative -left-1 hidden items-center text-xs uppercase hover:text-rose-500 md:flex'
+              className='font-heading relative -left-1 hidden items-center text-xs uppercase hover:text-[#FFBE7A] md:flex'
             >
               <MdOutlineKeyboardArrowLeft className='mr-1 h-4 w-auto' /> back to
               blog
             </Link>
             <MenuButton onOpen={onOpen} />
           </Container>
+          <DarkModeToggle />
         </Box>
       )}
       <AnimatePresence>

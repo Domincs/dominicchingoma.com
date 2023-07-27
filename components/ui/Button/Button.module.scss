@@ -3,7 +3,7 @@
 }
 
 .primary {
-  @apply bg-rose-500 text-white ring-rose-500 ring-offset-2 hover:bg-rose-600 hover:ring dark:ring-offset-slate-900 2xl:ring-offset-4;
+  @apply bg-[#FFBE7A] text-[#374151] ring-[#FFBE7A] ring-offset-2 hover:bg-[#f98811] hover:ring dark:ring-offset-slate-900 2xl:ring-offset-4;
 }
 
 .secondary {
@@ -11,7 +11,7 @@
 }
 
 .naked {
-  @apply bg-white text-slate-900;
+  @apply bg-white text-[#FFBE7A] m-0 p-0 text-2xl text-slate-900 hover:text-[#f98811];
 }
 
 .md {
@@ -25,3 +25,4 @@
 .disabled {
   @apply cursor-not-allowed opacity-30;
 }
+

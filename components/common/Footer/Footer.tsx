@@ -3,6 +3,7 @@ import { BsArrowUpCircle } from 'react-icons/bs';
 import { Container, Box, Text, Link } from '@components/ui';
 import { Subscribe, Copyright } from '@components/common';
 import { motion } from 'framer-motion';
+import { ArrowLink } from '@components/ui/ArrowButton';
 
 export const Footer = () => {
   return (
@@ -22,7 +23,7 @@ export const Footer = () => {
               transition={{ duration: 0.6 }}
               whileInView={{ opacity: 1 }}
             >
-              Joseph Mukorivo
+              Dominic Chingoma
             </motion.span>
           </Text>
           <Text className='mb-6'>
@@ -40,7 +41,7 @@ export const Footer = () => {
               at a time 😎.
             </motion.span>
           </Text>
-          <Subscribe />
+          {/* <Subscribe /> */}
         </Box>
         <Box className='col-span-2 hidden md:block'>
           <Text
@@ -66,32 +67,34 @@ export const Footer = () => {
           >
             <Link
               href='mailto:hello@josemukorivo.com'
-              className='mb-3 block text-base font-medium hover:text-rose-500 dark:hover:text-rose-500'
+              className='mb-3 block text-base font-medium hover:text-[#FFBE7A] dark:hover:text-[#FFBE7A]'
             >
               <code>{'<Email me/>'}</code>
             </Link>
             <Link
               href='/blog'
-              className='mb-3 block text-base font-medium hover:text-rose-500 dark:hover:text-rose-500'
+              className='mb-3 block text-base font-medium hover:text-[#FFBE7A] dark:hover:text-[#FFBE7A]'
             >
               <code>{'<Read the Blog/>'}</code>
             </Link>
             <Link
               href='/#about'
-              className='mb-3 block text-base font-medium hover:text-rose-500 dark:hover:text-rose-500'
+              className='mb-3 block text-base font-medium hover:text-[#FFBE7A] dark:hover:text-[#FFBE7A]'
             >
               <code>{'<About Joseph/>'}</code>
             </Link>
           </motion.span>
         </Box>
 
-        <Link
-          href='#top'
-          className='group absolute bottom-0 right-10 hidden items-center gap-2 text-sm font-medium uppercase text-rose-500 transition duration-300 ease-in-out hover:text-rose-600 dark:text-rose-500 md:flex'
+        
+
+        <Box
+          className='group absolute bottom-0 right-10 hidden items-center gap-2 md:flex'
         >
+          <ArrowLink href="#top" direction="up" textSize="small">
           Back to top
-          <BsArrowUpCircle className='relative -top-[2px] h-5 w-5 transform transition duration-300 ease-in-out group-hover:-translate-y-1' />
-        </Link>
+        </ArrowLink>
+        </Box>
       </Container>
 
       <Copyright />

@@ -6,6 +6,7 @@ import {
   GetInTouch,
   Hero,
   LatestBlogs,
+  FeaturedProjects,
   TechStack,
 } from '@components/sections';
 import { Footer, Nav, Page } from '@components/common';
@@ -25,20 +26,21 @@ export default function Home({ articles }) {
 
   return (
     <Page
-      title='Joseph Mukorivo | Software Engineer'
+      title='Dominic Chingoma | Software Engineer'
       description='I am a Software Engineer, Blogger and DevOps Enthusiat based in Harare, Zimbabwe.'
-      url='https://josemukorivo.com'
-      keywords='Joseph, Mukorivo,Joseph Mukoriwo,Mukoriwo, software engineer,Blogger, Zimbabwe, Harare software developer, zimbabwe developer blog, software development blog, DevOps blog, Cloud Computing blog, React Developer, React Blog'
+      url='https://dominicchingoma.com'
+      keywords='Dominic, Chingoma,Dominic Chingoma, Domi, software engineer,Blogger, Zimbabwe, Harare software developer, zimbabwe developer blog, software development blog, DevOps blog, Cloud Computing blog, React Developer, React Blog'
       image='https://josemukorivo.com/images/banner.jpg'
-      canonicalURL='https://josemukorivo.com'
+      canonicalURL='https://dominicchingoma.com'
     >
       <Nav className='absolute py-3 md:py-5' />
 
       <Hero />
       <About />
+      <FeaturedProjects />
+      <TechStack />
       <LatestBlogs articles={articles} />
       <GetInTouch />
-      <TechStack />
       <Footer />
       {schedule && (
         <Box className='fixed inset-0 z-30 bg-black bg-opacity-20 md:pt-20'>
@@ -46,7 +48,7 @@ export default function Home({ articles }) {
             className='absolute right-8 top-7 flex items-center gap-2 md:right-12'
             onClick={() => setSchedule(false)}
           >
-            <VscChromeClose className='h-8 w-auto transform text-white transition duration-300 ease-in-out hover:rotate-90 hover:text-rose-500' />
+            <VscChromeClose className='h-8 w-auto transform text-white transition duration-300 ease-in-out hover:rotate-90 hover:text-[#FFBE7A]' />
           </button>
           <InlineWidget
             url='https://calendly.com/josemukorivo'

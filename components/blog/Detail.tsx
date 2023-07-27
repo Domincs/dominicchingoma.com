@@ -20,7 +20,7 @@ const Badge = ({ children }) => (
 );
 
 const Prose = ({ children }) => (
-  <Box className='prose prose-lg prose-headings:font-heading prose-headings:uppercase prose-h2:text-2xl prose-h3:text-xl prose-h4:text-lg prose-a:text-rose-600 Code language-js dark:prose-invert'>
+  <Box className='prose prose-lg prose-headings:font-heading prose-headings:uppercase prose-h2:text-2xl prose-h3:text-xl prose-h4:text-lg prose-a:text-[#f98811] Code language-js dark:prose-invert'>
     {children}
   </Box>
 );
@@ -59,7 +59,7 @@ const Header = ({ slug, title, readTime, publishedAt }) => {
     <div ref={ref}>
       <Link
         href='/blog'
-        className='font-heading relative -left-[7px] mt-4 mb-5 flex items-center text-xs uppercase hover:text-rose-500 md:hidden'
+        className='font-heading relative -left-[7px] mt-4 mb-5 flex items-center text-xs uppercase hover:text-[#FFBE7A] md:hidden'
       >
         <MdOutlineKeyboardArrowLeft className='mr-1 h-4 w-auto' /> back to blog
       </Link>
@@ -116,7 +116,7 @@ export const BlogDetail = ({
           animate={{ y: 0, opacity: 1 }}
         >
           <Prose>
-            <Image src={coverImage} alt='' width={1000} height={420} />
+            {coverImage && <Image src={coverImage} alt='' width={1000} height={420} />}
             <Box className='mt-5 flex flex-wrap 2xl:mt-2'>
               {tags.map((tag) => (
                 <Badge key={tag}>#{tag}</Badge>

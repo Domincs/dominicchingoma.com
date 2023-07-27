@@ -7,13 +7,17 @@ import { formatDate } from '@utils/format-date';
 export const Card = ({ slug, title, date, readingTime, coverImage }) => {
   return (
     <Link href={`/blog/${slug}`} className={cn(s.root, 'group')}>
-      <Image
-        src={coverImage}
-        className={s.image}
-        layout='fill'
-        objectFit='cover'
-        alt=''
-      />
+      {
+        coverImage &&
+        <Image
+          src={coverImage}
+          className={s.image}
+          layout='fill'
+          objectFit='cover'
+          alt=''
+        />
+      }
+      
       <Box className={s.content}>
         <Text as='h2' fontSize='4xl' className='mb-4 leading-[1.15] text-white'>
           {title}

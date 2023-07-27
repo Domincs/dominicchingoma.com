@@ -8,6 +8,7 @@ import 'swiper/css/effect-cards';
 import { Box, Button, Card, Container, Link, Text } from '@components/ui';
 import s from './Latest.module.scss';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowButton } from '@components/ui/ArrowButton';
 
 SwiperCore.use([EffectCards]);
 
@@ -34,7 +35,7 @@ export const LatestBlogs = ({ articles }) => {
           </Text>
           <Link
             href='/blog'
-            className='font-heading hidden text-sm font-medium uppercase hover:text-rose-500 dark:hover:text-rose-500 md:block'
+            className='font-heading hidden text-sm font-medium uppercase hover:text-[#FFBE7A] dark:hover:text-[#FFBE7A] md:block'
           >
             <motion.span
               className='block'
@@ -59,16 +60,24 @@ export const LatestBlogs = ({ articles }) => {
           </motion.span>
           <Link
             href='/blog'
-            className='font-heading text-sm font-medium uppercase text-rose-500'
+            className='font-heading text-sm font-medium uppercase text-[#FFBE7A]'
           >
             See the full blog
           </Link>{' '}
         </Text>
       </Container>
+      {
+        (!articles || articles.length === 0) &&
+        <Container>
+          <Text>
+            Coming Soon!
+          </Text>
+        </Container>
+      }
 
       <Container className='md:hidden'>
         <Swiper effect={'cards'} grabCursor={true}>
-          {articles?.length &&
+          {(articles?.length !== undefined && articles?.length > 0) &&
             articles.map(
               ({
                 id,
@@ -96,7 +105,7 @@ export const LatestBlogs = ({ articles }) => {
           className='hidden w-[3000px] gap-x-10 pl-10 transition duration-500 ease-in-out md:flex 2xl:pl-12'
           style={{ transform: `translate3d(${x}px, 0px, 0px)` }}
         >
-          {articles?.length &&
+          {(articles?.length !== undefined && articles?.length > 0) &&
             articles.map(
               (
                 {
@@ -134,26 +143,22 @@ export const LatestBlogs = ({ articles }) => {
             )}
         </Box>
       </AnimatePresence>
-      <Container className='hidden md:block 2xl:mt-2'>
-        <Button
-          className={s.arrows}
-          size='sm'
-          disabled={x === 0}
-          onClick={() => translate(510)}
-        >
-          <MdArrowBackIosNew className='h-6 w-auto' />
-          <span className='sr-only'>Click to move one slide to left</span>
-        </Button>
-        <Button
-          className={s.arrows}
-          disabled={x === -1530}
-          size='sm'
-          onClick={() => translate(-510)}
-        >
-          <MdArrowForwardIos className='h-6 w-auto' />
-          <span className='sr-only'>Click to move one slide to right</span>
-        </Button>
-      </Container>
+      {
+        (articles?.length === undefined  || articles?.length !== 0) &&
+        <Container className='hidden md:block 2xl:mt-2'>
+          <ArrowButton
+            direction="left"
+            onClick={() => translate(510)}
+            disabled={x === 0}
+          />
+          <ArrowButton
+            direction="right"
+            onClick={() => translate(-510)}
+            disabled={x === -1530}
+          />
+        </Container>
+      }
+      
     </Container>
   );
 };

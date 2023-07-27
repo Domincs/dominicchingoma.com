@@ -22,12 +22,12 @@ export const SideBar = () => {
       title: 'Twitter',
     },
     {
-      href: 'https://www.linkedin.com/in/josemukorivo/',
+      href: 'https://www.linkedin.com/in/dominic-chingoma/',
       Icon: AiFillLinkedin,
       title: 'Linkedin',
     },
     {
-      href: 'mailto:hello@josemukorivo.com',
+      href: 'mailto:hello@dominicchingoma.com',
       Icon: AiFillMail,
       title: 'Email',
     },
@@ -46,7 +46,7 @@ export const SideBar = () => {
             fontSize='xs'
             className='text-slate-500 dark:text-slate-400'
           >
-            Writer & DevOps Enthusiat
+            Software Engineer, Software Architect, DevOps
           </Text>
         </Box>
 
@@ -56,10 +56,10 @@ export const SideBar = () => {
               key={href}
               href={href}
               target='_blank'
-              className='mb-5 block dark:hover:text-rose-500'
+              className='mb-5 block dark:hover:text-[#FFBE7A]'
             >
               <Icon className={s.icon} />
-              <span className='sr-only'>Connect with Joseph on {title}</span>
+              <span className='sr-only'>Connect with Dominic on {title}</span>
             </Link>
           ))}
         </Box>

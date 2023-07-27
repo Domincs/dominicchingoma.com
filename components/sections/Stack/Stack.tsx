@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 const Stack: FC<{ src: string }> = ({ src }) => {
   return (
     <Box className={s.stack}>
-      <Image height={60} width={60} src={src} alt='' />
+      {src && <Image height={60} width={60} src={src} alt='' />}
     </Box>
   );
 };
@@ -48,7 +48,7 @@ export const TechStack = () => {
           <Link
             href='https://docs.google.com/document/d/16-sqqDzL3SR1vomlTW6gKOKIqJ7xd_MgfJXrDLkqbnU/'
             target='_blank'
-            className='font-heading mb-6 text-sm font-medium uppercase hover:text-rose-500 dark:hover:text-rose-500 md:mb-0'
+            className='font-heading mb-6 text-sm font-medium uppercase hover:text-[#FFBE7A] dark:hover:text-[#FFBE7A] md:mb-0'
           >
             <motion.span
               className='block'

@@ -11,7 +11,7 @@ body {
   @apply font-body scroll-smooth 2xl:text-xl;
 }
 body {
-  @apply text-slate-900 transition duration-100 ease-in-out dark:bg-slate-900 dark:text-slate-300;
+  @apply text-[#374151] transition duration-100 ease-in-out dark:bg-slate-900 dark:text-slate-300;
 }
 
 .times {
@@ -37,7 +37,7 @@ code {
 /* NProgress */
 /* Make clicks pass-through */
 :root {
-  --nprogress-color: #ef4444;
+  --nprogress-color: #FFBE79;
 }
 #nprogress {
   pointer-events: none;

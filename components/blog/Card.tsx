@@ -13,17 +13,21 @@ export const Card = ({
 }) => {
   return (
     <Link href={`/blog/${slug}`} className='group block'>
-      <Image
-        src={coverImage}
-        width={600}
-        height={360}
-        quality={100}
-        objectFit='cover'
-        placeholder='blur'
-        blurDataURL='/images/blog-placeholder.png'
-        className='bg-slate-50 transition duration-200 ease-in-out group-hover:scale-110 dark:bg-slate-800'
-        alt=''
-      />
+      {
+        coverImage && 
+        <Image
+          src={coverImage}
+          width={600}
+          height={360}
+          quality={100}
+          objectFit='cover'
+          placeholder='blur'
+          blurDataURL='/images/blog-placeholder.png'
+          className='bg-slate-50 transition duration-200 ease-in-out group-hover:scale-110 dark:bg-slate-800'
+          alt=''
+        />
+      }
+      
 
       <Box className='flex items-center justify-between'>
         <Text as='span' fontSize='sm' className='opacity-75'>
