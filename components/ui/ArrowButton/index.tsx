@@ -110,8 +110,8 @@ function ArrowButtonContent({
         <span className="mr-8 text-xl font-medium">{children}</span>
       ) : null}
 
-      <div className="relative inline-flex h-14 w-14 flex-none items-center justify-center p-1">
-        <div className="absolute text-gray-200 dark:text-gray-600">
+      <div className="relative inline-flex h-14 w-14 flex-none items-center justify-center p-1 text-slate-800 dark:text-slate-200">
+        <div className="absolute text-slate-200 dark:text-slate-500">
           <svg width="60" height="60">
             <circle
               stroke="currentColor"
@@ -123,7 +123,7 @@ function ArrowButtonContent({
             />
 
             <motion.circle
-              className="text-white dark:text-gray-100"
+              className="text-slate-800 dark:text-slate-200"
               stroke="currentColor"
               strokeWidth="2"
               fill="transparent"

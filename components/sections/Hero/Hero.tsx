@@ -12,7 +12,7 @@ export const Hero = () => {
         initial={{ opacity: 0.8 }}
         transition={{ duration: 0.6 }}
         animate={{ opacity: 1 }}
-        className='absolute w-screen left-0 t-0 h-screen z-[-1]'
+        className='relative md:absolute w-screen left-0 t-0 h-[70vh] md:h-screen z-[-1] hidden md:block'
       >
         <Image
           src='/images/dominic.png'
@@ -25,8 +25,25 @@ export const Hero = () => {
           alt='Dominic Chingoma'
         />
       </motion.div>
+      <motion.div
+        initial={{ opacity: 0.8 }}
+        transition={{ duration: 0.6 }}
+        animate={{ opacity: 1 }}
+        className='relative md:absolute w-screen left-0 t-0 h-[70vh] md:h-screen z-[-1] block md:hidden'
+      >
+        <Image
+          src='/images/dominic.png'
+          layout='fill'
+          objectFit='cover'
+          priority
+          quality={50}
+          blurDataURL='/images/jose-placeholder.png'
+          placeholder='blur'
+          alt='Dominic Chingoma'
+        />
+      </motion.div>
 
-      <Container className='flex justify-between items-center w-full'>
+      <Container className='flex flex-col md:flex-row justify-between items-center w-full'>
         <Box className='md:w-96'>
           <Text as='h1' className='mb-5' fontSize='5xl'>
             <motion.span
@@ -100,7 +117,7 @@ export const Hero = () => {
               <Text as='p' fontSize='xl' className='text-amber-500 0text-2xl'>
                 Download Resume
               </Text>
-              <BiDownload color='#d97706' />
+              <BiDownload color='#f59e0b' />
             </Box>
           </Link>
 

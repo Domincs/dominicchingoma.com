@@ -3,7 +3,7 @@
 }
 
 .primary {
-  @apply bg-white text-[#374151] ring-amber-500 ring-offset-2 hover:ring dark:ring-offset-slate-900 2xl:ring-offset-4;
+  @apply bg-white text-[#374151] ring-amber-600 ring-offset-2 hover:ring dark:ring-offset-slate-900 2xl:ring-offset-4;
 }
 
 .secondary {
@@ -11,7 +11,7 @@
 }
 
 .naked {
-  @apply bg-white text-amber-500 m-0 p-0 text-2xl text-slate-900 hover:text-[#f98811];
+  @apply bg-white text-amber-600 m-0 p-0 text-2xl text-slate-900 hover:text-[#f98811];
 }
 
 .md {
