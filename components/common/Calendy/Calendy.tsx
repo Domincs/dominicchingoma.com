@@ -17,7 +17,7 @@ export const Calendy: FC<Props> = ({ children }) => {
   return (
     documentReady && (
       <PopupButton
-        className='font-heading mb-1 mr-3 inline-block bg-slate-800 px-7 py-4 text-sm uppercase text-white ring-slate-800 ring-offset-2 transition duration-200 ease-linear hover:bg-slate-900 hover:ring dark:bg-slate-700 dark:ring-slate-700 dark:ring-offset-slate-900 md:px-8 2xl:ring-offset-4'
+        className='mb-1 mr-3 inline-block px-6 py-3 text-slate-800 dark:text-slate-200 ring-slate-400 ring-offset-1 transition duration-200 ease-linear ring dark:ring-slate-200 hover:dark:ring-slate-400 hover:ring-transparent hover:dark:ring-slate-600 hover:ring-offset-transparent ring-offset-slate-400 dark:ring-offset-slate-200 hover:dark:ring-offset-slate-400 hover:dark:ring-slate-400 md:px-6 md:py-3 2xl:ring-offset-1 rounded-full font-medium'
         url='https://calendly.com/josemukorivo'
         /*
          * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to

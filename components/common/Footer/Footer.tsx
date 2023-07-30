@@ -67,19 +67,19 @@ export const Footer = () => {
           >
             <Link
               href='mailto:hello@josemukorivo.com'
-              className='mb-3 block text-base font-medium hover:text-[#FFBE7A] dark:hover:text-[#FFBE7A]'
+              className='mb-3 block text-base font-medium hover:text-amber-500 dark:hover:text-amber-500'
             >
               <code>{'<Email me/>'}</code>
             </Link>
             <Link
               href='/blog'
-              className='mb-3 block text-base font-medium hover:text-[#FFBE7A] dark:hover:text-[#FFBE7A]'
+              className='mb-3 block text-base font-medium hover:text-amber-500 dark:hover:text-amber-500'
             >
               <code>{'<Read the Blog/>'}</code>
             </Link>
             <Link
               href='/#about'
-              className='mb-3 block text-base font-medium hover:text-[#FFBE7A] dark:hover:text-[#FFBE7A]'
+              className='mb-3 block text-base font-medium hover:text-amber-500 dark:hover:text-amber-500'
             >
               <code>{'<About Joseph/>'}</code>
             </Link>

@@ -48,6 +48,18 @@ class MyDocument extends Document {
           <link
             rel='icon'
             type='image/png'
+            sizes='512x512'
+            href='/favicon/favicon-512x512.png'
+          />
+          <link
+            rel='icon'
+            type='image/png'
+            sizes='192x192'
+            href='/favicon/favicon-192x192.png'
+          />
+          <link
+            rel='icon'
+            type='image/png'
             sizes='32x32'
             href='/favicon/favicon-32x32.png'
           />
@@ -58,12 +70,12 @@ class MyDocument extends Document {
             href='/favicon/favicon-16x16.png'
           />
           <link rel='manifest' href='/favicon/site.webmanifest' />
-          <link
+          {/* <link
             rel='mask-icon'
             href='/favicon/safari-pinned-tab.svg'
             color='#f43f5e'
-          />
-          <meta name='msapplication-TileColor' content='#f43f5e' />
+          /> */}
+          <meta name='msapplication-TileColor' content='#f59e0b' />
           <meta name='theme-color' content='#ffffff' />
         </Head>
         <body style={{ fontSize: 20 }}>

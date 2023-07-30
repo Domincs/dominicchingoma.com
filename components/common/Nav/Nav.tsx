@@ -38,7 +38,7 @@ export const Nav: FC<Props> = ({ className = '', variant = 'main' }) => {
             <Logo className='md:hidden' />
             <Link
               href='/blog'
-              className='font-heading relative -left-1 hidden items-center text-xs uppercase hover:text-[#FFBE7A] md:flex'
+              className='font-heading relative -left-1 hidden items-center text-xs uppercase hover:text-amber-500 md:flex'
             >
               <MdOutlineKeyboardArrowLeft className='mr-1 h-4 w-auto' /> back to
               blog

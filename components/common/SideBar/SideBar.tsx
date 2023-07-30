@@ -56,7 +56,7 @@ export const SideBar = () => {
               key={href}
               href={href}
               target='_blank'
-              className='mb-5 block dark:hover:text-[#FFBE7A]'
+              className='mb-5 block dark:hover:text-amber-500'
             >
               <Icon className={s.icon} />
               <span className='sr-only'>Connect with Dominic on {title}</span>

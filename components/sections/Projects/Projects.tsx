@@ -50,9 +50,21 @@ export const FeaturedProjects = () => {
                 </motion.span>
             </Text>
             <Box className="mb-10 md:mb-28 mt-[5em] md:mt-[8em] horizontal-scroll overflow-hidden flex flex-row flex-nowrap gap-[6em] z-[-1] w-fit" id="horizontal-scroll-container">
-                    <Project />
-                    <Project />
-                    <Project />
+                    <Project
+                        title={"Insurance Underwriting System"}
+                        description={"A web application that allows users to submit claims and view their status"}
+                        image="/images/code.jpg"
+                    />
+                    <Project
+                        title="African Citizens Watch"
+                        description={"A platform to track the performance of governments in African countries"}
+                        image="/images/african-citizens-watch.png"
+                    />
+                    <Project
+                        title={"Digital Insurance Platform"}
+                        description={"A platform to buy motor insurance and view their status"}
+                        image="/images/code.jpg"
+                    />
             </Box>
         </Container>
         

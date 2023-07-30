@@ -17,9 +17,9 @@ export const Hero = () => {
         <Image
           src='/images/dominic.png'
           layout='fill'
-          objectFit='cover'
+          objectFit={"contain"}
           priority
-          quality={100}
+          quality={50}
           blurDataURL='/images/jose-placeholder.png'
           placeholder='blur'
           alt='Dominic Chingoma'
@@ -36,7 +36,7 @@ export const Hero = () => {
               whileInView={{ y: 0, opacity: 1 }}
             >
               Hello, <br/>
-              I’m <span className='text-[#FFBE7A]'>Dominic</span>
+              I’m <span className='text-amber-500'>Dominic</span>
             </motion.span>
           </Text>
           <Text as='p' className='mb-5' fontSize='xl'>
@@ -63,7 +63,7 @@ export const Hero = () => {
           </motion.div>
         </Box>
         <Box className='md:w-96 z-20'>
-          <Text as='p' className='mb-5 text-[#FFBE7A]' fontSize='lg'>
+          <Text as='p' className='mb-5 text-amber-500' fontSize='lg'>
             <motion.span
               className='block'
               initial={{ y: -20, opacity: 0 }}
@@ -93,14 +93,14 @@ export const Hero = () => {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, at pariatur quae nostrum atque odit odio voluptas, quaerat possimus eligendi facere deleniti, modi dolore praesentium temporibus illo! Ut, saepe minima.
             </motion.span>
           </Text>
-          <Link href="/"
+          <Link href="https://dochub.com/dominicchingoma/DL7JlEGV13ql0eaRrWe0oa/dominic-chingoma-resume-pdf?dt=3fZet394ZHVksHN5TK1y" target='_blank'
             className='font-heading mr-3 uppercase p-0'
           >
-            <Box as={"div"} className='flex items-center gap-2 leading-2 border-b-2 w-max border-[#FFBE7A] pb-1'>
-              <Text as='p' fontSize='xl' className='text-[#FFBE7A] text-2xl'>
+            <Box as={"div"} className='flex items-center gap-2 leading-2 border-b-2 w-max border-amber-500 0pb-1'>
+              <Text as='p' fontSize='xl' className='text-amber-500 0text-2xl'>
                 Download Resume
               </Text>
-              <BiDownload color='#FFBE7A' />
+              <BiDownload color='#d97706' />
             </Box>
           </Link>
 

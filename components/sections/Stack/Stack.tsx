@@ -17,18 +17,32 @@ export const TechStack = () => {
   const techStack = [
     '/images/stack/next.svg',
     '/images/stack/kubernetes-icon.svg',
-    '/images/stack/golang-official.svg',
+    '/images/stack/supabase-logo-icon.svg',
+    '/images/stack/spring-icon.svg',
+    '/images/stack/apache-camel.svg',
     '/images/stack/styled-components.svg',
     '/images/stack/reactjs-icon.svg',
+    '/images/stack/azure-icon.svg',
     '/images/stack/strapi.svg',
     '/images/stack/highcharts.svg',
     '/images/stack/tailwindcss-icon.svg',
     '/images/stack/javascript.svg',
     '/images/stack/docker-icon.svg',
+    '/images/stack/django-icon.svg',
+    '/images/stack/java-icon.svg',
+    '/images/stack/jenkins-icon.svg',
     '/images/stack/figma-icon.svg',
+    '/images/stack/kotlin-icon.svg',
     '/images/stack/typescriptlang-icon.svg',
     '/images/stack/google_cloud-icon.svg',
     '/images/stack/python-icon.svg',
+    '/images/stack/nginx-icon.svg',
+    '/images/stack/php-icon.svg',
+    '/images/stack/postgresql-icon.svg',
+    '/images/stack/quarkus.svg',
+    '/images/stack/mysql.svg',
+    '/images/stack/linux.svg',
+    '/images/stack/istio-icon.svg',
   ];
 
   return (
@@ -46,9 +60,9 @@ export const TechStack = () => {
             </motion.span>
           </Text>
           <Link
-            href='https://docs.google.com/document/d/16-sqqDzL3SR1vomlTW6gKOKIqJ7xd_MgfJXrDLkqbnU/'
+            href='https://dochub.com/dominicchingoma/DL7JlEGV13ql0eaRrWe0oa/dominic-chingoma-resume-pdf?dt=3fZet394ZHVksHN5TK1y'
             target='_blank'
-            className='font-heading mb-6 text-sm font-medium uppercase hover:text-[#FFBE7A] dark:hover:text-[#FFBE7A] md:mb-0'
+            className='font-heading mb-6 text-sm font-medium uppercase hover:text-amber-500 dark:hover:text-amber-500 md:mb-0'
           >
             <motion.span
               className='block'

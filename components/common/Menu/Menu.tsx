@@ -32,7 +32,7 @@ export const Menu = ({ onClose }) => {
   const getClasses = (path: string) => {
     return cn(
       {
-        'text-[#FFBE7A]': pathname === path,
+        'text-amber-500': pathname === path,
       },
       'font-heading md:ml-60 max-w-xs px-4 text-4xl uppercase transition duration-100 ease-linear hover:translate-x-1'
     );
@@ -77,7 +77,7 @@ export const Menu = ({ onClose }) => {
           {links.map(({ label, href }, idx) => (
             <motion.li
               key={href}
-              className='hover:text-[#FFBE7A]'
+              className='hover:text-amber-500'
               initial={{
                 opacity: 0,
                 x: -20,

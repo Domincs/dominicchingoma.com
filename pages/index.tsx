@@ -48,7 +48,7 @@ export default function Home({ articles }) {
             className='absolute right-8 top-7 flex items-center gap-2 md:right-12'
             onClick={() => setSchedule(false)}
           >
-            <VscChromeClose className='h-8 w-auto transform text-white transition duration-300 ease-in-out hover:rotate-90 hover:text-[#FFBE7A]' />
+            <VscChromeClose className='h-8 w-auto transform text-white transition duration-300 ease-in-out hover:rotate-90 hover:text-amber-500' />
           </button>
           <InlineWidget
             url='https://calendly.com/josemukorivo'

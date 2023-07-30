@@ -9,7 +9,7 @@ export const Copyright = () => (
       Credit &nbsp;
       <Link
         href='https://josemukorivo.com'
-        className='font-medium text-[#FFBE7A] hover:text-[#f98811] dark:text-[#FFBE7A]'
+        className='font-medium text-amber-500 0hover:text-[#f98811] dark:text-amber-500'
       >
         Joseph Mukorivo
       </Link>

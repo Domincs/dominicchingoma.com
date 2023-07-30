@@ -1,79 +1,115 @@
-import {
-  FC,
-  forwardRef,
-  useRef,
-  ButtonHTMLAttributes,
-  JSXElementConstructor,
-} from 'react';
-import Link from 'next/link';
-import cn from 'classnames';
-
+import { AnchorOrLink } from '@utils/misc'
+import {clsx} from 'clsx'
+import * as React from 'react'
 import s from './Button.module.scss';
-import { mergeRefs } from '@utils/index';
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  href?: string;
-  className?: string;
-  disabled?: boolean;
-  loading?: boolean;
-  target?: '_blank' | '_self' | '_parent' | '_top';
-  size?: 'sm' | 'md' | 'lg';
-  type?: 'button' | 'submit' | 'reset';
-  variant?: 'primary' | 'secondary' | 'naked';
-  as?: 'button' | 'a' | JSXElementConstructor<any>;
+interface ButtonProps {
+  variant?: 'primary' | 'secondary' | 'danger'
+  size?: 'small' | 'medium' | 'large'
+  children: React.ReactNode | React.ReactNode[]
 }
 
-export const Button: FC<ButtonProps> = forwardRef((props, buttonRef) => {
-  const {
-    as: Tag = 'button',
-    variant = 'naked',
-    size = 'md',
-    type = 'button',
-    target = '_self',
-    href,
-    className,
-    disabled,
-    children,
-    ...rest
-  } = props;
-  const ref = useRef<typeof Tag>(null);
-  const classes = cn(
+function getClassName({className}: {className?: string}) {
+  return clsx(
     s.root,
-    {
-      [s.primary]: variant === 'primary',
-      [s.secondary]: variant === 'secondary',
-      [s.naked]: variant === 'naked',
-      [s.disabled]: disabled,
-      [s.sm]: size === 'sm',
-      [s.md]: size === 'md',
-      [s.lg]: size === 'lg',
-      
-    },
-    className
-  );
+    'group relative inline-flex font-medium focus:outline-none opacity-100 disabled:opacity-50 transition',
+    className,
+  )
+}
 
+function ButtonInner({
+  children,
+  variant,
+  size = 'large',
+}: Pick<ButtonProps, 'children' | 'variant' | 'size'>) {
   return (
     <>
-      {href ? (
-        <Tag ref={mergeRefs([ref, buttonRef])} {...rest}>
-          <Link href={href}>
-            <a className={classes} target={target}>
-              {children}
-            </a>
-          </Link>
-        </Tag>
-      ) : (
-        <Tag
-          ref={mergeRefs([ref, buttonRef])}
-          disabled={disabled}
-          className={classes}
-          {...rest}
-        >
-          {children}
-        </Tag>
-      )}
-    </>
-  );
-});
+      <div
+        className={clsx(
+          'focus-ring absolute inset-0 transform rounded-full opacity-100 transition disabled:opacity-50',
+          {
+            'border-secondary bg-primary border-2 group-hover:border-transparent group-focus:border-transparent':
+              variant === 'secondary' || variant === 'danger',
+            danger: variant === 'danger',
+            'bg-white': variant === 'primary',
+          },
+        )}
+      />
 
-Button.displayName = 'Button';
+      <div
+        className={clsx(
+          'relative flex h-full w-full items-center justify-center whitespace-nowrap rounded-full',
+          {
+            'text-primary': variant === 'secondary',
+            'text-slate-200 bg-slate-800 dark:bg-slate-200 dark:text-slate-800': variant === 'primary',
+            'text-red-500': variant === 'danger',
+            'space-x-5 px-8 py-4': size === 'large',
+            'space-x-3 px-6 py-3': size === 'medium',
+            'space-x-1 px-5 py-2 text-sm': size === 'small',
+          },
+        )}
+      >
+        {children}
+      </div>
+    </>
+  )
+}
+
+function Button({
+  children,
+  variant = 'primary',
+  size = 'large',
+  className,
+  ...buttonProps
+}: ButtonProps & JSX.IntrinsicElements['button']) {
+  return (
+    <button {...buttonProps} className={getClassName({className})}>
+      <ButtonInner variant={variant} size={size}>
+        {children}
+      </ButtonInner>
+    </button>
+  )
+}
+
+/**
+ * A button that looks like a link
+ */
+function LinkButton({
+  className,
+  underlined,
+  ...buttonProps
+}: {underlined?: boolean} & JSX.IntrinsicElements['button']) {
+  return (
+    <button
+      {...buttonProps}
+      className={clsx(
+        s.root,
+        className,
+        underlined
+          ? 'underlined whitespace-nowrap focus:outline-none'
+          : 'underline',
+        className?.includes('block') ? '' : 'inline-block',
+        'text-primary',
+      )}
+    />
+  )
+}
+
+/**
+ * A link that looks like a button
+ */
+const ButtonLink = React.forwardRef<
+  HTMLAnchorElement,
+  React.ComponentPropsWithRef<typeof AnchorOrLink> & ButtonProps
+>(function ButtonLink(
+  {children, variant = 'primary', className, ...rest},
+  ref,
+) {
+  return (
+    <AnchorOrLink ref={ref} className={getClassName({className})} {...rest}>
+      <ButtonInner variant={variant}>{children}</ButtonInner>
+    </AnchorOrLink>
+  )
+})
+
+export {Button, ButtonLink, LinkButton}

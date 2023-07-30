@@ -35,7 +35,7 @@ export const LatestBlogs = ({ articles }) => {
           </Text>
           <Link
             href='/blog'
-            className='font-heading hidden text-sm font-medium uppercase hover:text-[#FFBE7A] dark:hover:text-[#FFBE7A] md:block'
+            className='font-heading hidden text-sm font-medium uppercase hover:text-amber-500 dark:hover:text-amber-500 md:block'
           >
             <motion.span
               className='block'
@@ -60,7 +60,7 @@ export const LatestBlogs = ({ articles }) => {
           </motion.span>
           <Link
             href='/blog'
-            className='font-heading text-sm font-medium uppercase text-[#FFBE7A]'
+            className='font-heading text-sm font-medium uppercase text-amber-500'
           >
             See the full blog
           </Link>{' '}
@@ -145,11 +145,12 @@ export const LatestBlogs = ({ articles }) => {
       </AnimatePresence>
       {
         (articles?.length === undefined  || articles?.length !== 0) &&
-        <Container className='hidden md:block 2xl:mt-2'>
+        <Container className='hidden md:mt-5 md:block 2xl:mt-2'>
           <ArrowButton
             direction="left"
             onClick={() => translate(510)}
             disabled={x === 0}
+            className='mr-5 xl:mr-0'
           />
           <ArrowButton
             direction="right"

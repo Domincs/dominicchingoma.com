@@ -59,7 +59,7 @@ const Header = ({ slug, title, readTime, publishedAt }) => {
     <div ref={ref}>
       <Link
         href='/blog'
-        className='font-heading relative -left-[7px] mt-4 mb-5 flex items-center text-xs uppercase hover:text-[#FFBE7A] md:hidden'
+        className='font-heading relative -left-[7px] mt-4 mb-5 flex items-center text-xs uppercase hover:text-amber-500 md:hidden'
       >
         <MdOutlineKeyboardArrowLeft className='mr-1 h-4 w-auto' /> back to blog
       </Link>
