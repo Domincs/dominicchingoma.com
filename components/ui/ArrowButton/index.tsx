@@ -107,7 +107,7 @@ function ArrowButtonContent({
       (direction === 'right' ||
         direction === 'up' ||
         direction === 'top-right') ? (
-        <span className="mr-8 text-xl font-medium">{children}</span>
+        <span className="mr-8 text-xl font-medium text-slate-800 dark:text-slate-200">{children}</span>
       ) : null}
 
       <div className="relative inline-flex h-14 w-14 flex-none items-center justify-center p-1 text-slate-800 dark:text-slate-200">

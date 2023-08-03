@@ -36,7 +36,6 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <Component {...pageProps} />
-      <Accessibility />
     </Layout>
   );
 }

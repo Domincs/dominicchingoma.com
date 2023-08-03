@@ -63,7 +63,7 @@ export const Hero = () => {
               transition={{ duration: 0.8 }}
               whileInView={{ y: 0, opacity: 1 }}
             >
-              Software Engineer, DevOps, Software Architect.
+              Software Engineer, DevOps, Software Architect, Tech Evangelist.
             </motion.span>
           </Text>
           
@@ -87,7 +87,7 @@ export const Hero = () => {
               transition={{ duration: 0.8 }}
               whileInView={{ y: 0, opacity: 1 }}
             >
-              Expert on
+              Expert in
             </motion.span>
           </Text>
           <Text as='h2' className='mb-5' fontSize='3xl'>
@@ -97,7 +97,7 @@ export const Hero = () => {
               transition={{ duration: 0.8 }}
               whileInView={{ y: 0, opacity: 1 }}
             >
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Architecting high-quality code for exceptional digital experiences.
             </motion.span>
           </Text>
           <Text as='p' className='mb-5' fontSize='lg'>
@@ -107,7 +107,7 @@ export const Hero = () => {
               transition={{ duration: 0.8 }}
               whileInView={{ y: 0, opacity: 1 }}
             >
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, at pariatur quae nostrum atque odit odio voluptas, quaerat possimus eligendi facere deleniti, modi dolore praesentium temporibus illo! Ut, saepe minima.
+              I&#39;m a passionate software developer dedicated to delivering innovative code solutions that elevate user satisfaction. As a tech evangelist, I stay at the forefront of industry trends, inspiring teams with cutting-edge tools. Exceptional communicator and collaborator, fostering cross-functional synergy for shared success.
             </motion.span>
           </Text>
           <Link href="https://dochub.com/dominicchingoma/DL7JlEGV13ql0eaRrWe0oa/dominic-chingoma-resume-pdf?dt=3fZet394ZHVksHN5TK1y" target='_blank'

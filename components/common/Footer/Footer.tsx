@@ -33,12 +33,9 @@ export const Footer = () => {
               transition={{ duration: 0.8 }}
               whileInView={{ opacity: 1 }}
             >
-              Software engineer from Harare, Zimbabwe who is trying to make the
-              world a better place one{' '}
-              <code className='text-sm font-bold dark:font-medium dark:text-slate-300 2xl:text-lg'>
-                {'<commit/>'}
-              </code>{' '}
-              at a time 😎.
+              Architecting Tomorrow&#39;s Digital Landscape with Code Wizardry{' '}
+              <code className='text-sm font-bold dark:font-medium dark:text-slate-300 xl:text-lg'>
+              </code>.
             </motion.span>
           </Text>
           {/* <Subscribe /> */}

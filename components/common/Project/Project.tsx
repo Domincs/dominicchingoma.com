@@ -1,17 +1,21 @@
 import { Box, Text } from "@components/ui";
 import Image from "next/image";
 import { motion } from 'framer-motion';
+import Link from "next/link";
+import {  BiLinkExternal } from "react-icons/bi";
 
 interface ProjectProps {
   title: string;
   description: string;
-  image: string
+  image: string;
+  link?: string
 }
 export const Project = (
 {
   title,
   description,
-  image
+  image,
+  link = undefined
   }: ProjectProps
 ) => {
   return (
@@ -31,13 +35,23 @@ export const Project = (
             </motion.p>
           </Text>
         </Box>
-        <ul className="flex flex-row gap-4 list-none text-amber-500">
+        <ul className="flex flex-row gap-4 list-none text-amber-500 flex-nowrap">
           <li>Codeigniter</li>
           <li>MySql</li>
           <li>Bootstrap</li>
           <li>JQuery</li>
           <li>Html</li>
         </ul>
+        <Box className="flex justify-start">
+          {
+            link !== undefined && (
+            <Link href={link} >
+              <a target="_blank" href={link} rel="noreferrer" className="btn btn-primary text-3xl relative z-50"><BiLinkExternal /></a>
+            </Link>
+            )
+          }
+          
+        </Box>
       </Box>
       <Box className="col-start-6 row-start-1 row-end-1 col-end-12 relative min-h-[200px] md:w-lg z-1">
         <Image

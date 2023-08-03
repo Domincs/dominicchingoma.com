@@ -52,18 +52,20 @@ export const FeaturedProjects = () => {
             <Box className="mb-10 md:mb-28 mt-[5em] md:mt-[8em] horizontal-scroll overflow-hidden flex flex-row flex-nowrap gap-[6em] z-[-1] w-fit" id="horizontal-scroll-container">
                     <Project
                         title={"Insurance Underwriting System"}
-                        description={"A web application that allows users to submit claims and view their status"}
+                        description={"This specialized tool caters to the needs of insurance brokers and underwriting agencies, offering a streamlined approach to policy administration, claims management, and report generation. It provides efficient management of accounts through features like audit reports, balanced statements, receipt printing, and cashier summaries. Simplify policy-related tasks such as quotes, renewals, endorsements, and invoices with organized lists and insightful analysis reports. Dive deeper into claims assessment using face sheets, loss ratios, risk management, and statistics. Seamlessly manage a range of stakeholders including customers, agents, and insurers, all while benefiting from advanced reports and profitability insights."}
                         image="/images/code.jpg"
                     />
                     <Project
                         title="African Citizens Watch"
-                        description={"A platform to track the performance of governments in African countries"}
+                        description={"An independent platform that tracks the performance and effectiveness of African governments based on the pledges made in the manifesto and other important policy pronouncements. The tool is owned and managed by an independent organisation called SIVIO Institute"}
                         image="/images/african-citizens-watch.png"
+                        link = "https://africancitizenswatch.org"
                     />
                     <Project
                         title={"Digital Insurance Platform"}
-                        description={"A platform to buy motor insurance and view their status"}
+                        description={"Traditional methods require clients to visit specific physical locations, leading to long queues and discouragement. DMP (Digital Insurance Platform) is an online platform aimed to simplify the hustle of buying or renewing insurance and ZINARA in Zimbabwe. It is powered by an insurance company in Zimbabwe called Credsure. Clients can manage policies, receive personalized assistance, and conveniently renew from the comfort of their homes without visiting the office, reducing the risk of policy lapses and fostering stronger customer relationships."}
                         image="/images/code.jpg"
+                        link="https://dmp.credsure.co.zw/experts/motor_quote/"
                     />
             </Box>
         </Container>
