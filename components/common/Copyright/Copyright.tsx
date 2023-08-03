@@ -1,7 +1,7 @@
 import { Container, Text, Link } from '@components/ui';
 
 export const Copyright = () => (
-  <Container className='flex flex-col justify-between border-t border-slate-300 py-5 dark:border-slate-700 md:flex-row'>
+  <Container className='flex flex-col items-center justify-between border-t border-slate-300 py-5 dark:border-slate-700 md:flex-row'>
     <Text fontSize='xs'>
       All rights reserved © Dominic Chingoma {new Date().getFullYear()}
     </Text>

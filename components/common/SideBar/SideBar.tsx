@@ -12,12 +12,12 @@ import { Logo } from '../Logo/Logo';
 export const SideBar = () => {
   const links = [
     {
-      href: 'https://github.com/josemukorivo',
+      href: 'https://github.com/Domincs',
       Icon: AiFillGithub,
       title: 'Github',
     },
     {
-      href: 'https://twitter.com/josemukorivo',
+      href: 'https://twitter.com/dominicsdc',
       Icon: AiFillTwitterCircle,
       title: 'Twitter',
     },

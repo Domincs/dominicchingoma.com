@@ -38,13 +38,13 @@ function ButtonInner({
 
       <div
         className={clsx(
-          'relative flex h-full w-full items-center justify-center whitespace-nowrap rounded-full',
+          'relative flex h-full w-full items-center justify-center whitespace-nowrap rounded-full text-base md:text-xl',
           {
             'text-primary': variant === 'secondary',
             'text-slate-200 bg-slate-800 dark:bg-slate-200 dark:text-slate-800': variant === 'primary',
             'text-red-500': variant === 'danger',
-            'space-x-5 px-8 py-4': size === 'large',
-            'space-x-3 px-6 py-4': size === 'medium',
+            'space-x-5 px-8 py-3 md:py-4': size === 'large',
+            'space-x-3 px-4 md:px-6 py-2 md:py-3': size === 'medium',
             'space-x-1 px-5 py-2 text-sm': size === 'small',
           },
         )}

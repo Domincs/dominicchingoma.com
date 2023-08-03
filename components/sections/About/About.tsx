@@ -68,7 +68,7 @@ export const About = () => {
             transition={{delay: 1}}
             className="hidden pt-12 lg:block"
         >
-          <ArrowLink href={"/"} direction="right" textSize="small">
+          <ArrowLink href={"/#projects"} direction="right" textSize="small">
             Some of my work
           </ArrowLink>
         </motion.div>

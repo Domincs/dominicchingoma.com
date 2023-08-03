@@ -13,7 +13,7 @@ export const GetInTouch = () => (
         want written? I&lsquo;d love to hear from you.
       </Text>
       <Box className='flex items-center justify-center gap-5'>
-        <ButtonLink href='mailto:hello@josemukorivo.com' variant="primary" size='medium'>
+        <ButtonLink href='mailto:hello@dominicchingoma.com' variant="primary" size='medium'>
           Send me an email
         </ButtonLink>
         <Calendy>Schedule a meeting</Calendy>

@@ -30,14 +30,14 @@ const Share = ({ url, title }) => (
     <Text as='span' fontSize='sm' className='relative top-[2px] opacity-75'>
       Share:
     </Text>
-    <TwitterShareButton title={title} related={['josemukorivo']} url={url}>
+    <TwitterShareButton title={title} related={['dominicchingoma']} url={url}>
       <TwitterIcon size={23} round />
     </TwitterShareButton>
     <LinkedinShareButton
       title={title}
       url={url}
       summary={title}
-      source='josemukorivo'
+      source='dominicchingoma'
     >
       <LinkedinIcon size={23} round />
     </LinkedinShareButton>

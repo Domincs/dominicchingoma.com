@@ -28,14 +28,12 @@ export const Footer = () => {
           </Text>
           <Text className='mb-6'>
             <motion.span
-              className='block'
+              className='block text-slate-500 dark:text-slate-300'
               initial={{ opacity: 0 }}
               transition={{ duration: 0.8 }}
               whileInView={{ opacity: 1 }}
             >
               Architecting Tomorrow&#39;s Digital Landscape with Code Wizardry{' '}
-              <code className='text-sm font-bold dark:font-medium dark:text-slate-300 xl:text-lg'>
-              </code>.
             </motion.span>
           </Text>
           {/* <Subscribe /> */}
@@ -56,6 +54,7 @@ export const Footer = () => {
               Quick Links
             </motion.span>
           </Text>
+          
           <motion.span
             className='block'
             initial={{ opacity: 0 }}
@@ -63,22 +62,28 @@ export const Footer = () => {
             whileInView={{ opacity: 1 }}
           >
             <Link
-              href='mailto:hello@josemukorivo.com'
-              className='mb-3 block text-base font-medium hover:text-amber-500 dark:hover:text-amber-500'
+              href='mailto:hello@dominicchingoma.com'
+              className='mb-3 block text-base font-medium text-slate-500 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100 underlined transition-all duration-900 ease-in-out w-min'
             >
-              <code>{'<Email me/>'}</code>
+              Email me
+            </Link>
+            <Link
+              href='/#projects'
+              className='mb-3 block text-base font-medium text-slate-500 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100 underlined transition-all duration-900 ease-in-out w-min'
+            >
+              My Projects
             </Link>
             <Link
               href='/blog'
-              className='mb-3 block text-base font-medium hover:text-amber-500 dark:hover:text-amber-500'
+              className='mb-3 block text-base font-medium text-slate-500 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100 underlined transition-all duration-900 ease-in-out w-min'
             >
-              <code>{'<Read the Blog/>'}</code>
+              My Blog
             </Link>
             <Link
               href='/#about'
-              className='mb-3 block text-base font-medium hover:text-amber-500 dark:hover:text-amber-500'
+              className='mb-3 block text-base font-medium text-slate-500 dark:text-slate-300 hover:text-slate-800 dark:hover:text-slate-100 underlined transition-all duration-900 ease-in-out w-min'
             >
-              <code>{'<About Joseph/>'}</code>
+              About Dominic
             </Link>
           </motion.span>
         </Box>

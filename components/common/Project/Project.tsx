@@ -8,6 +8,7 @@ interface ProjectProps {
   title: string;
   description: string;
   image: string;
+  technology?: string[];
   link?: string
 }
 export const Project = (
@@ -15,6 +16,7 @@ export const Project = (
   title,
   description,
   image,
+  technology = [],
   link = undefined
   }: ProjectProps
 ) => {
@@ -36,11 +38,9 @@ export const Project = (
           </Text>
         </Box>
         <ul className="flex flex-row gap-4 list-none text-amber-500 flex-nowrap">
-          <li>Codeigniter</li>
-          <li>MySql</li>
-          <li>Bootstrap</li>
-          <li>JQuery</li>
-          <li>Html</li>
+          {technology.map((tech) => (
+            <li key={tech}>{tech}</li>
+          ))}
         </ul>
         <Box className="flex justify-start">
           {

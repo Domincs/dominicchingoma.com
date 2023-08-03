@@ -20,7 +20,7 @@ export const Hero = () => {
           objectFit={"contain"}
           priority
           quality={50}
-          blurDataURL='/images/jose-placeholder.png'
+          blurDataURL='/images/dominic-placeholder.png'
           placeholder='blur'
           alt='Dominic Chingoma'
         />
@@ -37,7 +37,7 @@ export const Hero = () => {
           objectFit='cover'
           priority
           quality={50}
-          blurDataURL='/images/jose-placeholder.png'
+          blurDataURL='/images/dominic-placeholder.png'
           placeholder='blur'
           alt='Dominic Chingoma'
         />
@@ -79,7 +79,7 @@ export const Hero = () => {
             </ArrowLink>
           </motion.div>
         </Box>
-        <Box className='md:w-96 z-20'>
+        <Box className='md:w-96 z-5'>
           <Text as='p' className='mb-5 text-amber-500' fontSize='lg'>
             <motion.span
               className='block'

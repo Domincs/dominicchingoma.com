@@ -1,7 +1,7 @@
-## josemukorivo.com
+## dominicchingoma.com
 
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/josemukorivo/josemukorivo.com)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/dominicchingoma/dominicchingoma.com)
 
 
 - **Framework**: [Next.js](https://nextjs.org/)
@@ -17,13 +17,13 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 ## Learn more
 
-I have writen a [blog post](https://josemukorivo.com/blog/how-i-developed-my-modern-open-source-portfolio-2o92) explaing how I developed the portfolio.
+I have writen a [blog post](https://dominicchingoma.com/blog/how-i-developed-my-modern-open-source-portfolio-2o92) explaing how I developed the portfolio.
 
 ## Running Locally:
 
 ```bash
-$ git clone git@github.com:josemukorivo/josemukorivo.com.git
-$ cd josemukorivo.com
+$ git clone git@github.com:dominicchingoma/dominicchingoma.com.git
+$ cd dominicchingoma.com
 $ cp .env.example .env.local
 $ npm run dev
 # or
@@ -32,5 +32,5 @@ $ yarn dev
 
 ## Cloning / Forking
 
-Please review the [license](https://github.com/josemukorivo/josemukorivo.com/blob/main/LICENCE) first.
+Please review the [license](https://github.com/dominicchingoma/dominicchingoma.com/blob/main/LICENCE) first.
 
