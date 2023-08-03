@@ -74,7 +74,7 @@ const Form = ({ status, message, onValidated }) => {
       <Button
         variant='primary'
         type='submit'
-        size='lg'
+        size='medium'
         disabled={status === 'sending' || status === 'success'}
         className='font-heading uppercase ring-offset-2'
       >
