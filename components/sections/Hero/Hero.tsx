@@ -23,6 +23,7 @@ export const Hero = () => {
           blurDataURL='/images/dominic-placeholder.png'
           placeholder='blur'
           alt='Dominic Chingoma'
+          className='bg-no-repeat'
         />
       </motion.div>
       <motion.div

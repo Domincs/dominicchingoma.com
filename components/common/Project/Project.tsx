@@ -21,10 +21,16 @@ export const Project = (
   }: ProjectProps
 ) => {
   return (
-    <Box className="grid grid-cols-12 gap-5 py-5 w-screen max-w-6xl aspect-[8/3] panel">
-      <Box className="grid col-start-1 col-span-7 row-start-1 row-end-1 relative z-10 gap-4">
+    <Box className="grid grid-cols-12 gap-5 py-5 w-screen max-w-6xl md:aspect-[8/3] panel">
+      <Box className="col-start-1 col-span-12 row-start-1 row-end-1 md:hidden">
         <Text className="text-amber-500" fontSize="md">Featured project</Text>
         <Text as="h2" fontSize="3xl">{title}</Text>
+      </Box>
+      <Box className="grid col-start-1 col-end-12 md:col-end-7 row-start-3 md:row-start-1 row-end-3 md:row-end-1 relative z-10 gap-4">
+        <Box className="hidden md:block">
+          <Text className="text-amber-500" fontSize="md">Featured project</Text>
+          <Text as="h2" fontSize="3xl">{title}</Text>
+        </Box>
         <Box className="bg-slate-50 dark:bg-slate-800 rounded shadow-md">
           <Text as='p' className='p-3' fontSize='xl'>
             <motion.p
@@ -37,7 +43,7 @@ export const Project = (
             </motion.p>
           </Text>
         </Box>
-        <ul className="flex flex-row gap-4 list-none text-amber-500 flex-nowrap">
+        <ul className="flex flex-row gap-4 list-none text-amber-500 flex-nowrap text-base">
           {technology.map((tech) => (
             <li key={tech}>{tech}</li>
           ))}
@@ -53,13 +59,13 @@ export const Project = (
           
         </Box>
       </Box>
-      <Box className="col-start-6 row-start-1 row-end-1 col-end-12 relative min-h-[200px] md:w-lg z-1">
+      <Box className=" col-start-1 md:col-start-6 row-start-2 md:row-start-1 row-end-2 md:row-end-1 col-end-12 relative min-h-[200px] md:w-lg z-1">
         <Image
           src={image}
           objectFit="cover"
           layout="fill"
           alt="Insurance System"
-          className="absolute"
+          className="absolute rounded-2xl"
         />
       </Box>
 

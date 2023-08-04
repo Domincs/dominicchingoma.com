@@ -25,7 +25,7 @@ export const FeaturedProjects = () => {
         ease: "none",
         scrollTrigger: {
             trigger: ".horizontal-scroll",
-            start: 'top 15%',
+            start: 'top 10%',
             //end: () => innerWidth * (sections.length+1),
             pin: true,
             scrub: 0.1,
@@ -38,7 +38,7 @@ export const FeaturedProjects = () => {
     gsap.registerPlugin(ScrollToPlugin)
     
     return (
-        <Container id="projects">
+        <Container className="relative z-[0]" id="projects">
             <Text as='h2' className='mb-4' fontSize='4xl'>
                 <motion.span
                 className='block'
@@ -49,10 +49,10 @@ export const FeaturedProjects = () => {
                 Featured Projects
                 </motion.span>
             </Text>
-            <Box className="mb-10 md:mb-28 mt-[5em] md:mt-[8em] horizontal-scroll overflow-hidden flex flex-row flex-nowrap gap-[6em] z-[-1] w-fit" id="horizontal-scroll-container">
+            <Box className="mb-10 md:mb-28 mt-0 md:mt-[8em] horizontal-scroll overflow-hidden flex flex-row flex-nowrap gap-[6em] relative z-[-1] w-fit left-0" id="horizontal-scroll-container">
                     <Project
                         title={"Insurance Underwriting System"}
-                        description={"This specialized tool caters to the needs of insurance brokers and underwriting agencies, offering a streamlined approach to policy administration, claims management, and report generation. It provides efficient management of accounts through features like audit reports, balanced statements, receipt printing, and cashier summaries. Simplify policy-related tasks such as quotes, renewals, endorsements, and invoices with organized lists and insightful analysis reports. Dive deeper into claims assessment using face sheets, loss ratios, risk management, and statistics. Seamlessly manage a range of stakeholders including customers, agents, and insurers, all while benefiting from advanced reports and profitability insights."}
+                        description={"This tool serves insurance brokers and underwriting agencies, streamlining policy tasks, claims, and reports. It manages accounts with audit reports, balanced statements, and receipt printing. Simplifies quotes, renewals, and claims with organized lists and analysis. Handles stakeholders, offers advanced reports for profitability insights."}
                         image="/images/code.jpg"
                         technology = {['Codeigniter', 'MySql', 'Bootstrap', 'JQuery', 'Html']}
                     />
@@ -65,11 +65,12 @@ export const FeaturedProjects = () => {
                     />
                     <Project
                         title={"Digital Insurance Platform"}
-                        description={"Traditional methods require clients to visit specific physical locations, leading to long queues and discouragement. DMP (Digital Insurance Platform) is an online platform aimed to simplify the hustle of buying or renewing insurance and ZINARA in Zimbabwe. It is powered by an insurance company in Zimbabwe called Credsure. Clients can manage policies, receive personalized assistance, and conveniently renew from the comfort of their homes without visiting the office, reducing the risk of policy lapses and fostering stronger customer relationships."}
+                        description={"Unveil the future of insurance with DMP (Digital Insurance Platform): a revolutionary online marvel. Clients harness its power to effortlessly manage policies, bask in personalized assistance, and renew with ease – all from the sanctuary of their homes. No more tedious office visits, no more policy lapses. Embrace unparalleled convenience and forge unbreakable customer bonds, all thanks to this digital masterpiece."}
                         image="/images/code.jpg"
                         link="https://dmp.credsure.co.zw/experts/motor_quote/"
                         technology={["Django", "Celery", "Postgres", "Django Channels"]}
                     />
+                    <Box className="panel md:hidden"/>
             </Box>
         </Container>
         
