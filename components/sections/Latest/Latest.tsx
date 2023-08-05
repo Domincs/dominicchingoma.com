@@ -70,7 +70,7 @@ export const LatestBlogs = ({ articles }) => {
         (!articles || articles.length === 0) &&
         <Container>
           <Text>
-            Coming Soon!
+            Coming Soon...
           </Text>
         </Container>
       }

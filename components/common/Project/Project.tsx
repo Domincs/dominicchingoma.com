@@ -66,6 +66,8 @@ export const Project = (
           layout="fill"
           alt="Insurance System"
           className="absolute rounded-2xl"
+          blurDataURL='/images/code-placeholder.jpg'
+          placeholder='blur'
         />
       </Box>
 

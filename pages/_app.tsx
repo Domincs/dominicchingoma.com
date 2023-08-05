@@ -4,7 +4,7 @@ import NProgress from 'nprogress';
 import '@styles/globals.css';
 
 import * as gtag from '../lib/gtag';
-import { Accessibility, Layout } from '@components/common';
+import { Layout } from '@components/common';
 import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {

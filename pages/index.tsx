@@ -29,8 +29,8 @@ export default function Home({ articles }) {
       title='Dominic Chingoma | Software Engineer'
       description='I am a Software Engineer, Blogger and DevOps Enthusiat based in Harare, Zimbabwe.'
       url='https://dominicchingoma.com'
-      keywords='Dominic, Chingoma,Dominic Chingoma, Domi, software engineer,Blogger, Zimbabwe, Harare software developer, zimbabwe developer blog, software development blog, DevOps blog, Cloud Computing blog, React Developer, React Blog'
-      image='https://josemukorivo.com/images/banner.jpg'
+      keywords='Dominic, Chingoma, Dominic Chingoma, Domi, software engineer,Blogger, Zimbabwe, Harare software developer, zimbabwe developer blog, software development blog, DevOps blog, Cloud Computing blog, React Developer, React Blog'
+      image='https://josemukorivo.com/images/banner.png'
       canonicalURL='https://dominicchingoma.com'
     >
       <Nav className='absolute py-3 md:py-5' />

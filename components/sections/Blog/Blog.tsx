@@ -21,6 +21,19 @@ export const Blog = ({ articles }) => {
       </Container>
       <AnimatePresence>
         <Container className='grid grid-cols-2 gap-4 pb-12 md:grid-cols-3 md:gap-x-6 md:gap-y-12 2xl:grid-cols-4'>
+          {
+            articles.length === 0 && 
+            <Text as='p'>
+              <motion.span
+                className='block'
+                initial={{ y: -20, opacity: 0 }}
+                transition={{ duration: 0.6 }}
+                animate={{ y: 0, opacity: 1 }}
+              >
+                Coming soon...
+              </motion.span>
+            </Text>
+          }
           {articles.map(
             (
               {
