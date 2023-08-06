@@ -75,7 +75,7 @@ export const Hero = () => {
             transition={{delay: 1}}
             className="hidden pt-12 lg:block"
           >
-            <ArrowLink href={"/"} direction="right" textSize="small">
+            <ArrowLink href={"/#contact"} direction="right" textSize="small">
               {"Let's Talk"}
             </ArrowLink>
           </motion.div>

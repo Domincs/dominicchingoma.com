@@ -1,9 +1,6 @@
 import Image from 'next/image';
 import { Text, Box, Container, Link } from '@components/ui';
 import { motion } from 'framer-motion';
-import { Button } from '@components/ui';
-import { BiDownload } from 'react-icons/bi';
-import { BsArrowRight } from 'react-icons/bs';
 import { ArrowLink } from '@components/ui/ArrowButton';
 
 export const About = () => {
