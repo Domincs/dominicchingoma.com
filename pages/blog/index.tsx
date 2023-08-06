@@ -7,7 +7,7 @@ export default function Home({ articles }) {
       title='Dominic Chingoma | Blog'
       description="Dominic's thoughts on Software Development, DevOps, Cloud Computing and Tech in general."
       url='https://dominicchingoma.com/blog'
-      keywords='Dominic, Dominic Chingoma, dominicchingoma, Chingoma, software developer, web developer, web developer blog, software developer blog, software engineer,Blogger, Zimbabwe, Harare software developer, zimbabwe developer blog, software development blog, DevOps blog, Cloud Computing blog, React Developer, React Blog'
+      keywords='Dominic, Dominic Chingoma, dominicchingoma, Chingoma, software engineer, software developer, web developer, web developer blog, software developer blog, software engineer,Blogger, Zimbabwe, Harare software developer, zimbabwe developer blog, software development blog, DevOps blog, Cloud Computing blog, React Developer, React Blog'
       image='https://dominicchingoma.com/images/banner.png'
       canonicalURL='https://dominicchingoma.com/blog'
     >

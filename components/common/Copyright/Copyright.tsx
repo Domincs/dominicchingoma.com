@@ -1,11 +1,11 @@
 import { Container, Text, Link } from '@components/ui';
 
 export const Copyright = () => (
-  <Container className='flex flex-col items-center justify-between border-t border-slate-300 py-5 dark:border-slate-700 md:flex-row'>
+  <Container className='flex flex-col items-center justify-between border-t border-slate-300 py-5 dark:border-slate-700'>
     <Text fontSize='xs'>
       All rights reserved © Dominic Chingoma {new Date().getFullYear()}
     </Text>
-    <Text fontSize='xs' className='text-right'>
+    {/* <Text fontSize='xs' className='text-right'>
       Credit &nbsp;
       <Link
         href='https://josemukorivo.com'
@@ -13,7 +13,6 @@ export const Copyright = () => (
       >
         Joseph Mukorivo
       </Link>
-      .
-    </Text>
+    </Text> */}
   </Container>
 );

@@ -108,7 +108,7 @@ export const Hero = () => {
               transition={{ duration: 0.8 }}
               whileInView={{ y: 0, opacity: 1 }}
             >
-              I&#39;m a passionate software developer dedicated to delivering innovative code solutions that elevate user satisfaction. As a tech evangelist, I stay at the forefront of industry trends, inspiring teams with cutting-edge tools. Exceptional communicator and collaborator, fostering cross-functional synergy for shared success.
+              I&#39;m a passionate software engineer dedicated to delivering innovative code solutions that elevate user satisfaction. As a tech evangelist, I stay at the forefront of industry trends, inspiring teams with cutting-edge tools. Exceptional communicator and collaborator, fostering cross-functional synergy for shared success.
             </motion.span>
           </Text>
           <Link href="https://dochub.com/dominicchingoma/DL7JlEGV13ql0eaRrWe0oa/dominic-chingoma-resume-pdf?dt=3fZet394ZHVksHN5TK1y" target='_blank'
