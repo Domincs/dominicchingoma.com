@@ -25,7 +25,7 @@ export const Menu = ({ onClose }) => {
     },
     {
       label: 'My Resume',
-      href: 'https://docs.google.com/document/d/16-sqqDzL3SR1vomlTW6gKOKIqJ7xd_MgfJXrDLkqbnU/edit',
+      href: 'https://dochub.com/dominicchingoma/DL7JlEGV13ql0eaRrWe0oa/dominic-chingoma-resume-pdf?dt=3fZet394ZHVksHN5TK1y',
     },
   ];
 
