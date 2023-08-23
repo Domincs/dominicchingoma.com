@@ -43,9 +43,11 @@ export const Nav: FC<Props> = ({ className = '', variant = 'main' }) => {
               <MdOutlineKeyboardArrowLeft className='mr-1 h-4 w-auto' /> back to
               blog
             </Link>
-            <MenuButton onOpen={onOpen} />
+            <Box className="flex gap-5">
+              <DarkModeToggle />
+              <MenuButton onOpen={onOpen} />
+            </Box>
           </Container>
-          <DarkModeToggle />
         </Box>
       )}
       <AnimatePresence>
