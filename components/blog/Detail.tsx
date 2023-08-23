@@ -74,7 +74,7 @@ const Header = ({ slug, title, readTime, publishedAt }) => {
             {formatDate(publishedAt)} — {readTime} min{readTime > 1 && 's'} read
           </motion.span>
         </Text>
-        <Share url={`https://josemukorivo.com/blog/${slug}`} title={title} />
+        <Share url={`https://dominicchingoma.com/blog/${slug}`} title={title} />
       </Box>
       <Text as='h1' fontSize='4xl' className='mb-8 max-w-lg'>
         <motion.span

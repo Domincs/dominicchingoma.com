@@ -30,7 +30,7 @@ export default function Home({ articles }) {
       description='I am a Software Engineer, Blogger and DevOps Enthusiat based in Harare, Zimbabwe.'
       url='https://dominicchingoma.com'
       keywords='Dominic, Chingoma, Dominic Chingoma, Domi, software engineer,Blogger, Zimbabwe, Harare software developer, software engineer, kenya software developer, nairobi software developer, zimbabwe developer blog, software development blog, DevOps blog, Cloud Computing blog, React Developer, React Blog'
-      image='https://josemukorivo.com/images/banner.png'
+      image='https://dominicchingoma.com/images/banner.png'
       canonicalURL='https://dominicchingoma.com'
     >
       <Nav className='absolute py-3 md:py-5' />
@@ -51,7 +51,7 @@ export default function Home({ articles }) {
             <VscChromeClose className='h-8 w-auto transform text-white transition duration-300 ease-in-out hover:rotate-90 hover:text-amber-500' />
           </button>
           <InlineWidget
-            url='https://calendly.com/josemukorivo'
+            url='https://calendly.com/dominicchingoma'
             iframeTitle='Scheduling Page'
             pageSettings={{
               hideGdprBanner: true,
