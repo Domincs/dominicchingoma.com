@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Text, Box, Container, Link, Button, ArrowIcon } from '@components/ui';
+import { Text, Box, Container, Link } from '@components/ui';
 import {  BiDownload } from 'react-icons/bi';
-import { BsArrowRight } from 'react-icons/bs';
 import { ArrowLink } from '@components/ui/ArrowButton';
 
 export const Hero = () => {
@@ -12,10 +11,10 @@ export const Hero = () => {
         initial={{ opacity: 0.8 }}
         transition={{ duration: 0.6 }}
         animate={{ opacity: 1 }}
-        className='relative md:absolute w-screen left-0 t-0 h-[70vh] md:h-screen z-[-1] hidden md:block'
+        className='relative md:absolute w-screen left-0 t-0 h-[70vh] md:h-screen z-[-1] hidden md:block md:dark:hidden'
       >
         <Image
-          src='/images/dominic.png'
+          src='/images/dark_photo.png'
           layout='fill'
           objectFit={"contain"}
           priority
@@ -30,12 +29,47 @@ export const Hero = () => {
         initial={{ opacity: 0.8 }}
         transition={{ duration: 0.6 }}
         animate={{ opacity: 1 }}
-        className='relative md:absolute w-screen left-0 t-0 h-[70vh] md:h-screen z-[-1] block md:hidden'
+        className='relative md:absolute w-screen left-0 t-0 h-[70vh] md:h-screen z-[-1] hidden md:dark:block'
       >
         <Image
-          src='/images/dominic.png'
+          src='/images/light_photo.png'
+          layout='fill'
+          objectFit={"contain"}
+          priority
+          quality={50}
+          blurDataURL='/images/dominic-placeholder.png'
+          placeholder='blur'
+          alt='Dominic Chingoma'
+          className='bg-no-repeat'
+        />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0.8 }}
+        transition={{ duration: 0.6 }}
+        animate={{ opacity: 1 }}
+        className='relative md:absolute w-screen left-0 t-0 h-[70vh] md:h-screen z-[-1] block dark:hidden md:hidden'
+      >
+        <Image
+          src='/images/dark_photo.png'
           layout='fill'
           objectFit='cover'
+          priority
+          quality={50}
+          blurDataURL='/images/dominic-placeholder.png'
+          placeholder='blur'
+          alt='Dominic Chingoma'
+        />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0.8 }}
+        transition={{ duration: 0.6 }}
+        animate={{ opacity: 1 }}
+        className='relative md:absolute w-screen left-0 t-0 h-[70vh] md:h-screen z-[-1] hidden md:hidden dark:block'
+      >
+        <Image
+          src='/images/light_photo.png'
+          layout='fill'
+          objectFit='contain'
           priority
           quality={50}
           blurDataURL='/images/dominic-placeholder.png'
@@ -111,7 +145,7 @@ export const Hero = () => {
               I&#39;m a passionate software engineer dedicated to delivering innovative code solutions that elevate user satisfaction. As a tech evangelist, I stay at the forefront of industry trends, inspiring teams with cutting-edge tools. Exceptional communicator and collaborator, fostering cross-functional synergy for shared success.
             </motion.span>
           </Text>
-          <Link href="https://dochub.com/dominicchingoma/DL7JlEGV13ql0eaRrWe0oa/dominic-chingoma-resume-pdf?dt=3fZet394ZHVksHN5TK1y" target='_blank'
+          <Link href="https://dochub.com/m/shared-document/dominicchingoma/5lae27DR5YD40ZnRmqjZv1/headofengineering-docx?dt=kdhza-gyVkuhd1MyyCyb" target='_blank'
             className='font-heading mr-3 uppercase p-0'
           >
             <Box as={"div"} className='flex items-center gap-2 leading-2 border-b-2 w-max border-amber-500 0pb-1'>

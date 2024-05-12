@@ -29,7 +29,7 @@ export default function Home({ articles }) {
       title='Dominic Chingoma | Software Engineer'
       description='I am a Software Engineer, Blogger and DevOps Enthusiat based in Harare, Zimbabwe.'
       url='https://dominicchingoma.com'
-      keywords='Dominic, Chingoma, Dominic Chingoma, Domi, software engineer,Blogger, Zimbabwe, Harare software developer, software engineer, kenya software developer, nairobi software developer, zimbabwe developer blog, software development blog, DevOps blog, Cloud Computing blog, React Developer, React Blog'
+      keywords='Dominic, Chingoma, Dominic Chingoma, Domi, software engineer,Blogger, Zimbabwe, Harare software developer, software engineer, kenya software developer, nairobi software developer, zimbabwe developer blog, software development blog, DevOps blog, Cloud Computing blog, React Developer, React Blog, head of engineering, amaka head of engineering'
       image='https://dominicchingoma.com/images/banner.png'
       canonicalURL='https://dominicchingoma.com'
     >
