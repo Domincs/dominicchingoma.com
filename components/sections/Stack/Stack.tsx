@@ -60,7 +60,7 @@ export const TechStack = () => {
             </motion.span>
           </Text>
           <Link
-            href='https://dochub.com/m/shared-document/dominicchingoma/5lae27DR5YD40ZnRmqjZv1/headofengineering-docx?dt=kdhza-gyVkuhd1MyyCyb'
+            href='https://docs.google.com/document/d/1AXqZCJVXIMsbbNg-suPxpCjanr7cHEIW/edit?usp=sharing&ouid=107596598132806676606&rtpof=true&sd=true'
             target='_blank'
             className='font-heading mb-6 text-sm font-medium uppercase hover:text-amber-500 dark:hover:text-amber-500 md:mb-0'
           >

@@ -145,7 +145,7 @@ export const Hero = () => {
               I&#39;m a passionate software engineer dedicated to delivering innovative code solutions that elevate user satisfaction. As a tech evangelist, I stay at the forefront of industry trends, inspiring teams with cutting-edge tools. Exceptional communicator and collaborator, fostering cross-functional synergy for shared success.
             </motion.span>
           </Text>
-          <Link href="https://dochub.com/m/shared-document/dominicchingoma/5lae27DR5YD40ZnRmqjZv1/headofengineering-docx?dt=kdhza-gyVkuhd1MyyCyb" target='_blank'
+          <Link href="https://docs.google.com/document/d/1AXqZCJVXIMsbbNg-suPxpCjanr7cHEIW/edit?usp=sharing&ouid=107596598132806676606&rtpof=true&sd=true" target='_blank'
             className='font-heading mr-3 uppercase p-0'
           >
             <Box as={"div"} className='flex items-center gap-2 leading-2 border-b-2 w-max border-amber-500 0pb-1'>
